@@ -3,7 +3,7 @@ export default function Resume() {
         <section>
             <h2> Resume</h2>
             <p>
-                Coming soon!
+            <a href="Resume-Musa-Omar.pdf" download>Download my resume</a>
             </p>
         </section>
     );
