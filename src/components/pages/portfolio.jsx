@@ -35,7 +35,7 @@ export default function Portfolio() {
                 <h3 onClick={itineraryPlannerDeploy} style={{opacity: 0, transition: 'opacity 3s'}}> itinerary Planner</h3>
                 <img src="/github-mark.png" alt="link to GitHub" onClick={itineraryPlannerRepo} style={{opacity: 0, transition: 'opacity 3s'}} />
                 <p style={{opacity: 0, transition: 'opacity 3s'}}>
-                    test
+                HTML,CSS,JavaScript,API,PureCSS,Dayjs, and jquery
                 </p>
             </div>
             <div style={{ 
@@ -50,7 +50,7 @@ export default function Portfolio() {
                 <h3 onClick={albumReviewSiteDeploy} style={{opacity: 0, transition: 'opacity 3s'}}> itinerary Planner</h3>
                 <img src="/github-mark.png" alt="link to GitHub" onClick={albumReviewSiteRepo} style={{opacity: 0, transition: 'opacity 3s'}} />
                 <p style={{opacity: 0, transition: 'opacity 3s'}}>
-                    test
+                    MVC
                 </p>
             </div>
         </div>
