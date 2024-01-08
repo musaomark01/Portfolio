@@ -3,6 +3,7 @@ export default function AboutMe() {
         <section>
 
             <h2> about Me</h2>
+            <img src="1704754253026.png" alt="Musa Omar" />
 
             <p>
                 Hello, my name is <strong>Musa Omar</strong> and I am a <strong>Full Stack Web Developer</strong>.
