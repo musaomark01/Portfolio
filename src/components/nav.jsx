@@ -7,7 +7,7 @@ export default function Nav() {
             <ul>
                 <li>
                     <Link to="/" className={currentPage === "/" ? "nav-link active" : "nav-link"}>
-                       <h1>Portfolio</h1>
+                       <h1>Musa Omar</h1>
                     </Link>
                 </li>
                 <li>
