@@ -1,11 +1,11 @@
 export default function AboutMe() {
     return (
-        <section>
+        <section className="d-flex flex-column align-items-center text-center m-3">
 
-            <h2> about Me</h2>
-            <img src="1704754253026.png" alt="Musa Omar" />
+            <h2 className="text-center mb-4"> About Me</h2>
+            <img src="1704754253026.png" alt="Musa Omar"  style={{ borderRadius: '50%', width: '100px', height: '100px', objectFit: 'cover' }} />
 
-            <p>
+            <p className="text-center m-3">
                 Hello, my name is <strong>Musa Omar</strong> and I am a <strong>Full Stack Web Developer</strong>.
                 I have a passion for coding and love to create new experiences for users. I am a graduate of the 
                 Michigan State University Coding Bootcamp and have experience with HTML, CSS, JavaScript, Node.js, 
