@@ -16,10 +16,16 @@ export default function Contact() {
         </section>
         */
        <section>
-        <h2> Contact Me</h2>
-        <ul>
-            <li>email: <a href="mailto:musaomark01@gmail.com"> musaomark01@gmail.com</a></li>
-            <li>phone: <a href="tel:+1(269)213-0884"> +1(269)213-0884</a></li>
+         <h2 className="text-center mb-4"> Contact Me</h2>
+        <ul className="list-unstyled text-center">
+            <li className="mb-2">
+                <strong>Email:</strong> 
+                <a href="mailto:musaomark01@gmail.com" className="text-decoration-none"> musaomark01@gmail.com</a>
+            </li>
+            <li>
+                <strong>Phone:</strong> 
+                <a href="tel:+1(269)213-0884" className="text-decoration-none"> +1(269)213-0884</a>
+            </li>
         </ul>
        </section>
     );
