@@ -1,22 +1,31 @@
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container } from 'react-bootstrap';
-
+import { useState } from 'react';
+import {FaSun, FaMoon} from 'react-icons/fa';
 
 export default function NavTab() {
+    // Get the current page
     const currentPage = useLocation().pathname;
+    // Set up state for dark mode
+    const [isDarkMode, setIsDarkMode] = useState(false);
     function darkLightMode() {
-        const isDarkMode = document.body.classList.toggle('dark-mode');
+        // Toggle the body class
+        const newIsDarkMode = document.body.classList.toggle('dark-mode');
+        setIsDarkMode(newIsDarkMode);
+        // Toggle the navbar class
         document.querySelector('.custom-nav').classList.toggle('dark-mode');
         const navLinks = document.querySelectorAll('.nav-link');
+        // Loop through each nav link and toggle the color
         navLinks.forEach(link => {
-            if (isDarkMode) {
+            if (newIsDarkMode) {
                 link.style.color = 'var(--text-color-dark)';
             } else {
                 link.style.color = 'var(--text-color-light)';
             }
         });
+        // Toggle the sun and moon icons
         const navbarToggle = document.querySelector('.navbar-toggler-icon');
-        if (isDarkMode) {
+        if (newIsDarkMode) {
             navbarToggle.style.filter = 'invert(1)';
         } else {
             navbarToggle.style.filter = 'invert(0)';
@@ -43,12 +52,16 @@ export default function NavTab() {
                         <Nav.Link as={Link} to="/resume" className={currentPage === "/resume" ? "nav-link active" : "nav-link"}>
                             Resume
                         </Nav.Link>
+                        {/*  add a button to toggle dark mode */}
                         <Navbar.Brand
-                        style={{
-                            marginLeft: '80%'
-                        }}>
-                        <input type="button" onClick={darkLightMode} value='Dark Mode'
-                        style={{ backgroundColor: 'black', color: 'white'}}/>
+                            style={{
+                                marginLeft: '80%' // Move the button to the right
+                            }}
+                        >
+                            {/*  make the button transparent and borderless */}
+                            <button onClick={darkLightMode} style={{background: 'transparent', border: 'none'}}>
+                                {isDarkMode ? <FaSun style={{color: 'white'}} /> : <FaMoon />}
+                            </button>
                         </Navbar.Brand>
                     </Nav>
                 </Navbar.Collapse>

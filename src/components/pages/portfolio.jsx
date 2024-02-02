@@ -1,16 +1,33 @@
+
 export default function Portfolio() {
-    const itineraryPlannerRepo = () => {
-        window.open("https://github.com/JohnPaulZigterman/itinerary-planner.git");
-    }
-    const itineraryPlannerDeploy = () => {
-        window.open("https://johnpaulzigterman.github.io/itinerary-planner/");
-    }
-    const  albumReviewSiteRepo = () => {
-        window.open("https://github.com/JohnPaulZigterman/review-site.git");
-    }
-    const  albumReviewSiteDeploy = () => {
-        window.open("https://album-review-site-715f772b98d0.herokuapp.com/");
-    }
+    // set up an array of objects to hold the project details
+    const projects = [
+        {
+            title: 'Itinerary Planner',
+            description: ' Crafted using HTML, CSS, JavaScript, Third Party API, PureCSS, Dayjs, and jquery to create a web application that allows users to plan their trips',
+            repo: 'https://github.com/JohnPaulZigterman/itinerary-planner.git',
+            gitHubLogo: '/github-mark.png',
+            deploy: 'https://johnpaulzigterman.github.io/itinerary-planner/',
+            backgroundImage: '/projectOneImage.png'
+        },
+        {
+            title: 'Album Review Site',
+            description: 'Using MVC Structure, Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap to create a web application that allows users to review songs and albums',
+            repo: 'https://github.com/JohnPaulZigterman/review-site.git',
+            gitHubLogo: '/github-mark.png',
+            deploy: 'https://album-review-site-715f772b98d0.herokuapp.com/',
+            backgroundImage: '/projectTwoImage.png'
+        },
+        {
+            title: 'ITINERATE',
+            description: 'A full-stack application built on the MERN stack, using MongoDB, Express, React, node.js, graphql, apollo, and jwt to create a web application that allows users to plan their trips, and share their itineraries with others.',
+            repo: 'https://github.com/JohnPaulZigterman/itinerary-site.git',
+            gitHubLogo: '/github-mark.png',
+            deploy: 'https://itinerate.onrender.com',
+            backgroundImage: '/projectThreeImage.png '
+        }
+    ];
+
     // Function to handle hover event
     const handleHover = (e) => {
         // Get all children of the current target
@@ -20,17 +37,18 @@ export default function Portfolio() {
             children[i].style.opacity = e.type === 'mouseenter' ? 1 : 0;
         }
     }
+
     const backgroundImageStyle = { 
-        display: 'flex',
-        flexDirection: 'column',
-        flexWrap: 'wrap',
-        justifyContent: 'start',
-        alignItems: 'center',
-        warp: 'wrap',
-        width: '40vw',
-        height: '60vh',
-        backgroundSize: 'cover',
-        margin: 0,
+        display: 'flex', // Make the div a flex container
+        flexDirection: 'column', // Arrange children in a column
+        flexWrap: 'wrap', // Allow children to wrap
+        justifyContent: 'space-between', // Arrange children with space between them
+        alignItems: 'center', // Center children horizontally
+        warp: 'wrap', // Allow children to wrap
+        width: '40vw', // Make the width 40% of the viewport width
+        height: '50vh', // Make the height 50% of the viewport height
+        backgroundSize: 'cover', // Cover the entire div with the background image
+        margin: '10px', // Add a margin of 10px
         border: '3px solid black', // Add a black border
         borderRadius: '10px', // Make the corners round
         boxShadow: '5px 5px 10px', // Add a shadow
@@ -39,105 +57,94 @@ export default function Portfolio() {
     
     };
     const titleLogoStyle = {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'start',
-        opacity: 0, 
-        transition: 'opacity 3s',
-        backgroundColor: 'darkgrey',
-        margin: 0,
-        textAlign: 'center',
-        width: '100%',
-        borderTopLeftRadius: '10px', // Make the top left corner round
-        borderTopRightRadius: '10px', // Make the top right corner round
+        display: 'flex', // Make the div a flex container
+        flexWrap: 'wrap', // Allow children to wrap
+        flexDirection: 'row', // Arrange children in a row
+        opacity: 0, // Set the opacity to 0
+        transition: 'opacity 3s', // Add a transition effect to the opacity property that lasts 3 seconds
+        textAlign: 'center', // Center the text
+        width: '100%', // Make the width 100%
+        maxHeight: '20%', // Make the maximum height 20%
+        borderTopLeftRadius: '5px', // Make the top left corner round
+        borderTopRightRadius: '5px', // Make the top right corner round
     };
     const gitHubLogoStyle = { 
-            maxWidth: '20%',
-            height: 'auto',
-            objectFit: 'cover', 
-            cursor: 'pointer',
-            backgroundColor: 'white',
-            margin: 0,
-            textAlign: 'center',
-            
+            maxWidth: '20%', // Make the maximum width 20%
+            maxHeight: '80%', // Make the maximum height 80%
+            margin: '1%', // Add a margin of 1%
+            objectFit: 'cover', // Cover the entire div with the image
+            cursor: 'pointer', // Change the cursor to a pointer
+            backgroundColor: 'white', // Make the background white
+            borderRadius: '10px', // Make the top left corner round     
     };
     const projectTitleStyle = {
-        cursor: 'pointer',
-        backgroundColor: 'grey',
-        width: '100%',
-        margin: 0,
-        alignText: 'center',
+        cursor: 'pointer', // Change the cursor to a pointer
+        maxWidth: '74%', // Make the maximum width 74%
+        marginTop: '2%', // Add a margin of 2%
+        width: '100%', // Make the width 100%
     };
     const projectDescriptionStyle = {
-            opacity: 0,    
-            transition: 'opacity 3s',
-            backgroundColor: 'lightgrey',
-            margin: 0,
-            textAlign: 'center',
-            width: '100%',
-            borderBottom: '3px solid black',
+            opacity: 0, // Set the opacity to 0
+            transition: 'opacity 3s', // Add a transition effect to the opacity property that lasts 3 seconds
+            margin: 0, // set the margin to 0
+            textAlign: 'center', // Center the text
+            width: '100%', // Make the width 100%
+            borderBottom: '3px solid black', // Add a black border
     };
 
-    return (
-        <div >
 
+    return (
+        <div>
             <h2 style={{ 
-                width: '100%',
-                textAlign: 'center',
-                marginBottom: '20px'
+                width: '100%', // Make the width 100%
+                textAlign: 'center', // Center the text
+                marginBottom: '20px' // Add a margin of 20 pixels
             }}>Portfolio</h2>
+            <p
+            style={
+                {
+                    width: '100%', // Make the width 100%
+                    textAlign: 'center', // Center the text
+                    marginBottom: '20px' // Add a margin of 20 pixels
+                }
+            }>
+                {/*  Left a note for the user to hover over the images to see more information */}
+                <strong> Hover over any of the images to see more information about the project. Click on the GitHub logo to see the repository, and click on the project title to see the deployed application.
+                </strong></p>
 
             <div style={{ 
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            warp: 'wrap',
-            justifyContent: 'space-evenly',
-            alignItems: 'center'
+            display: 'flex', // Make the div a flex container
+            flexDirection: 'row', // Arrange children in a row
+            flexWrap: 'wrap', // Allow children to wrap
+            warp: 'wrap', // Allow children to wrap
+            justifyContent: 'space-evenly', // Arrange children with space between them
+            alignItems: 'center', // Center children horizontally
             }}>
+                {/*  Map over the projects array and create a div for each project */}
+                {projects.map((project, index) => (
+                    <div key={index} style={{ ...backgroundImageStyle,
+                        backgroundImage: `url('${project.backgroundImage}')`,
+                    }}
+                    // Add event listeners for mouse enter and leave
+                    onMouseEnter={handleHover}
+                    onMouseLeave={handleHover}
+                    >
+                        {/*  Create a div to hold the project details */}
+                        <div className="projectTitle projectText" style={titleLogoStyle}>
+                            <img src={project.gitHubLogo} alt="link to GitHub" onClick={() => window.open(project.repo)} 
+                            style={gitHubLogoStyle} />
 
-                <div style={{ ...backgroundImageStyle,
-                    backgroundImage: `url('/Screenshot 2023-09-23 222526.png')`,
-                }}
-                // Add event listeners for mouse enter and leave
-                onMouseEnter={handleHover}
-                onMouseLeave={handleHover}
-                >
-                    <div style={titleLogoStyle}>
-                        <img src="/github-mark.png" alt="link to GitHub" onClick={itineraryPlannerRepo} 
-                        style={gitHubLogoStyle} />
+                            <h3 onClick={() => window.open(project.deploy)} 
+                            style={projectTitleStyle}>  
+                            {project.title}</h3>
+                        </div>
 
-                        <h3 onClick={itineraryPlannerDeploy} 
-                        style={projectTitleStyle}>  
-                        Itinerary Planner</h3>
+                        <p
+                        style={projectDescriptionStyle} className="projectText">
+                            <strong>{project.description}</strong>
+                        </p>
                     </div>
-
-                    <p 
-                    style={projectDescriptionStyle}>
-                        HTML, CSS, JavaScript, API, PureCSS, Dayjs, and jquery
-                    </p>
-
-                </div>
-
-                <div style={{ ...backgroundImageStyle,
-                    backgroundImage: `url('/Screenshot 2023-11-20 213217.png')`,
-                }}
-                // Add event listeners for mouse enter and leave
-                onMouseEnter={handleHover}
-                onMouseLeave={handleHover}
-                >
-                    <div style={titleLogoStyle}>
-                        <img src="/github-mark.png" alt="link to GitHub" onClick={albumReviewSiteRepo} 
-                        style={gitHubLogoStyle} />
-                        <h3 onClick={albumReviewSiteDeploy} 
-                        style={projectTitleStyle}> 
-                        Album Review Site</h3>
-                    </div>  
-
-                    <p style={projectDescriptionStyle}>
-                        MVC, nodejs, express, handlebars, MySQL, and sequelize
-                    </p>
-                </div>
+                ))}
             </div>
         </div>
     );
