@@ -3,7 +3,12 @@ export default function AboutMe() {
         <section className="d-flex flex-column align-items-center text-center m-3">
 
             <h2 className="text-center mb-4"> About Me</h2>
-            <img src="1704754253026.png" alt="Musa Omar"  style={{ borderRadius: '50%', width: '100px', height: '100px', objectFit: 'cover' }} />
+            <img src="myImage.png" alt="Musa Omar"  
+            style={{ 
+                borderRadius: '50%', // Make the image round
+                width: '75px', // Set the width to 100 pixels
+                height: '75px', // Set the height to 100 pixels
+            }} />
 
             <p className="text-center m-3">
                 Hello, my name is <strong>Musa Omar</strong> and I am a <strong>Full Stack Web Developer</strong>.
