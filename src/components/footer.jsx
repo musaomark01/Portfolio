@@ -1,6 +1,6 @@
 export default function Footer() {
     const linkedinLink = () => {
-        window.open("https://www.linkedin.com/resume-builder/urn:li:fsd_memberResume:61265297/");
+        window.open("https://www.linkedin.com/in/musa-omar-6808152a6/");
     };
     const githubLink = () => {
         window.open("https://github.com/musaomark01");
