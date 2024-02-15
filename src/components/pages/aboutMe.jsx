@@ -11,13 +11,10 @@ export default function AboutMe() {
             }} />
 
             <p className="text-center m-3">
-                Hello, my name is <strong>Musa Omar</strong> and I am a <strong>Full Stack Web Developer</strong>.
-                I have a passion for coding and love to create new experiences for users. I am a graduate of the 
-                Michigan State University Coding Bootcamp and have experience with HTML, CSS, JavaScript, Node.js, 
-                Express.js, React.js, MySQL, MongoDB, and more. I am a quick learner and am always looking to expand 
-                my knowledge and skill set. I am thrilled about the future possibilities in technology and look 
-                forward to contributing my skills to create meaningful solutions that enhance the way users interact 
-                with the web.
+            Recent graduate from the Michigan State University Coding Bootcamp with a passion for Full Stack Web Development. 
+            Proficient in HTML, CSS, JavaScript, Node.js, Express.js, React.js, MySQL, MongoDB, and more. 
+            Experienced in optimizing productivity and maintaining quality standards through effective collaboration and problem-solving. 
+            Eager to leverage my skills and commitment to continuous learning to contribute to innovative web solutions.
             </p>
         </section>
     );

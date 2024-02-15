@@ -4,7 +4,7 @@ export default function Portfolio() {
     const projects = [
         {
             title: 'Itinerary Planner',
-            description: ' Crafted using HTML, CSS, JavaScript, Third Party API, PureCSS, Dayjs, and jquery to create a web application that allows users to plan their trips',
+            description: 'A web application that enables users to plan their trips. Built with HTML, CSS, JavaScript, Third Party API, PureCSS, Dayjs, and jQuery.',
             repo: 'https://github.com/JohnPaulZigterman/itinerary-planner.git',
             gitHubLogo: '/github-mark.png',
             deploy: 'https://johnpaulzigterman.github.io/itinerary-planner/',
@@ -12,7 +12,7 @@ export default function Portfolio() {
         },
         {
             title: 'Album Review Site',
-            description: 'Using MVC Structure, Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap to create a web application that allows users to review songs and albums',
+            description: 'A web application that lets users review songs and albums. Developed using MVC Structure, Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap.',
             repo: 'https://github.com/JohnPaulZigterman/review-site.git',
             gitHubLogo: '/github-mark.png',
             deploy: 'https://album-review-site-715f772b98d0.herokuapp.com/',
@@ -20,7 +20,7 @@ export default function Portfolio() {
         },
         {
             title: 'ITINERATE',
-            description: 'A full-stack application built on the MERN stack, using MongoDB, Express, React, node.js, graphql, apollo, and jwt to create a web application that allows users to plan their trips, and share their itineraries with others.',
+            description: 'A full-stack MERN application that allows users to plan their trips and share their itineraries with others. Utilizes MongoDB, Express, React, Node.js, GraphQL, Apollo, and JWT.',
             repo: 'https://github.com/JohnPaulZigterman/itinerary-site.git',
             gitHubLogo: '/github-mark.png',
             deploy: 'https://itinerate.onrender.com',
