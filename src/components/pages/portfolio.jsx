@@ -109,7 +109,7 @@ export default function Portfolio() {
                 }
             }>
                 {/*  Left a note for the user to hover over the images to see more information */}
-                <strong> Hover over any of the images to see more information about the project. Click on the GitHub logo to see the repository, and click on the project title to see the deployed application.
+                <strong> Hover over project images for additional information. Click on the GitHub logo to view the repository or on the project title to see the deployed application.
                 </strong></p>
 
             <div style={{ 
